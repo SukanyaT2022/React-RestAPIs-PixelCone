@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './App.css'
+import Search from './Search'
 
 const App = () => {
     const apiKey ="c19t5LBUeXItCyO5nb5bpds50rtTKwmX7xOeFa4PnEBN8jabAxpjQW6U"
@@ -23,15 +24,21 @@ const App = () => {
           //photos comfrom api in console array of data
           })
     },[])
+//This function will recive the data from child
+const dataCatcher = (val)=>{
+  setData(val.photos)
+}
 
   return (
       <div className='wrapper'>
-        {data &&
-            data.map((val)=>(
-                // <div>{val}</div>
-              <img src={val.src.tiny} className='image'/>
-            ))
-        }
+        <Search onData = {dataCatcher}/>
+        <div className='data_wrapper'>
+          {data &&
+              data.map((val)=>(
+                <img src={val.src.tiny} className='image'/>
+              ))
+          }
+        </div>
     </div>
   )
 }

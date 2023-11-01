@@ -1,12 +1,16 @@
-.wrapper{
-    display: flex;
-    width:100vw;
-    flex-wrap: wrap;
-    justify-content: center;
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-img{
-    width:25%;
-    margin:1%;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-    border-radius: 4px;
+img {
+  width: 25%;
+  margin: 1%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  border-radius: 4px;
+}
+.data_wrapper {
+  text-align: center;
 }
