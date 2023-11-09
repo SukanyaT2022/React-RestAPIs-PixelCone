@@ -14,3 +14,12 @@ img {
 .data_wrapper {
   text-align: center;
 }
+.modal{
+  width:100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.132);
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+}
