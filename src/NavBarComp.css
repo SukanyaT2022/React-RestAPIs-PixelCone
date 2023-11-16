@@ -40,3 +40,12 @@ margin-left: -25px;
 @media screen and (max-width:992px){
     
 }
+a{
+    text-decoration: none;
+    color:black;
+}
+
+a:hover{
+    color:black;
+    
+}
