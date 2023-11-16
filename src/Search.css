@@ -12,19 +12,37 @@
   
   .search_wrapper input {
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     border-radius: 5px;
     margin-right: 10px;
     font-size: 16px;
+
+ 
   }
   
   .search_wrapper button {
     padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
+    background-color:#FD9E7E;
+
+    font-weight: bold;
+    color:black;
     border: none;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
   }
+  .search_wrapper button:hover{
+    background-color: gray;
+color: white;
+  }
+  /* ipad air */
+@media screen and (max-width:992px){
+  .search_wrapper {
+  
+    top: 110px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+}
   
