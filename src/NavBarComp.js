@@ -11,23 +11,23 @@ import MyRoutes from './MyRoutes';
 function NavBarComp() {
   return (
     <div>
-    <Routes/>
+    <MyRoutes/>
     <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="#home"><img src={logo} className='targetLogo'/><b className='targetB'>Photo Search</b></Navbar.Brand>
+        <Navbar.Brand href="/">
+            <img src={logo} className='targetLogo'/>
+          <b className='targetB'>Photo Search</b></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-       
-          
           </Nav>
           <Nav>
             <div className='targetT'>T</div>
           <NavDropdown title="" id="collapsible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">
+              <NavDropdown.Item>
                 <Link to='login'>Login</Link>
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
+              <NavDropdown.Item>
               <Link to='logout'>Logout</Link>
 
               </NavDropdown.Item>
