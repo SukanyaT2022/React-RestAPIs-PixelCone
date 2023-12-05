@@ -9,10 +9,12 @@ const Home = () => {
   const apiUrl = `https://api.pexels.com/v1/search?query=${searchQuery}&per_page=${countPicPerPage}`;
   const [data, setData] = useState();
   const [modal, setModal] = useState(false);
-  const [storeImage, setStoreImage] = useState("");
+  const [storeImage, setStoreImage] = useState('');
+  const [nextPage, setNextPage] = useState('');
 
-  useEffect(() => {
-    fetch(apiUrl, {
+
+  const apiCall =(apiLink)=>{
+    fetch(apiLink, {
       method: "GET",
       headers: {
         Authorization: apiKey,
@@ -21,8 +23,14 @@ const Home = () => {
       .then((response) => response.json())
       .then((data) => {
         setData(data.photos);
+        setNextPage(data.next_page)
         console.log(data);
       });
+  }
+
+  useEffect(() => {
+   apiCall(apiUrl) // apiUrl is variable from line9- call function here so it call only one time not call infinity
+
   }, []);
 
   const dataCatcher = (val) => {
@@ -61,6 +69,7 @@ const Home = () => {
             />
           ))}
       </div>
+      <button onClick={()=>apiCall(nextPage)}>Next Page</button>
     </div>
     </>
   );
