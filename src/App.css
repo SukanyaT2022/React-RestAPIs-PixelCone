@@ -6,7 +6,6 @@
   width: 100vw;
   flex-wrap: wrap;
   justify-content: center;
-
 }
 img {
   width: 25%;
@@ -84,7 +83,6 @@ img:hover {
 .targetLogo{
   box-shadow: none;
 }
-
 /* next button */
 .nextButton{
   background-color: #9C00C9;

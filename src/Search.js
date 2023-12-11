@@ -11,7 +11,7 @@ const Search = (props) => {
 
   //below is api for search -- no effect here becasue we use function
   const searchHandler = () => {
-    fetch(`https://api.pexels.com/v1/search?query=${search}&per_page=50`, {
+    fetch(`https://api.pexels.com/v1/search?query=${search}&per_page=20`, {
       method: 'GET',
       headers: {
         Authorization: apiKey,
