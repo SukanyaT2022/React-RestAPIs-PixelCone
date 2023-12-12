@@ -87,10 +87,37 @@ img:hover {
 .nextButton{
   background-color: #9C00C9;
   border: none;
-  width: 25%;
+  width: 15%;
   padding: 15px 30px;
-  margin: 50px auto;
+  margin: 50px 20px;
   color: white;
   font-weight: bold;
 border-radius: 10px;
 }
+.nextButton:hover{
+  background-color: #da6dff;
+}
+.controlBothButton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* ipad */
+@media screen and (max-width:992px){
+  .nextButton{
+    width: 25%;
+    font-size: 20px;
+  }
+  .wrapper {
+    margin-top: 40px;
+
+  }
+}
+/* phone */
+@media screen and (max-width:600px){
+  .nextButton{
+    width: 25%;
+    font-size: 20px;
+  }
+}
+

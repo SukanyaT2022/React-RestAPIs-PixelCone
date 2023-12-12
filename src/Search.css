@@ -8,6 +8,7 @@
   top: 40px;
   left: 50%;
   transform: translateX(-50%);
+
 }
 
 .search_wrapper input {
@@ -16,6 +17,7 @@
   border-radius: 5px;
   margin-right: 10px;
   font-size: 16px;
+  
 }
 
 .search_wrapper button {
@@ -34,6 +36,22 @@
 }
 /* ipad air */
 @media screen and (max-width: 992px) {
+  .search_wrapper {
+    top: 110px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+  }
+  .search_wrapper input {
+    padding: 10px;
+    border: 1px solid #fc6001;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+    width: 80%!important;
+  }
+}
+@media screen and (max-width: 600px) {
   .search_wrapper {
     top: 110px;
     left: 50%;

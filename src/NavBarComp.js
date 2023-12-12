@@ -12,8 +12,8 @@ function NavBarComp() {
   return (
     <div>
     <MyRoutes/>
-    <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
-      <Container>
+    <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary ">
+      <Container className='targetWholeNavBar'>
         <Navbar.Brand href="/">
             <img src={logo} className='targetLogo'/>
           <b className='targetB'>Photo Search</b></Navbar.Brand>
@@ -25,10 +25,10 @@ function NavBarComp() {
             <div className='targetT'>T</div>
           <NavDropdown title="" id="collapsible-nav-dropdown">
               <NavDropdown.Item>
-                <Link to='login'>Login</Link>
+                <Link to='login' className='targetLogInLogout'>Login</Link>
               </NavDropdown.Item>
               <NavDropdown.Item>
-              <Link to='logout'>Logout</Link>
+              <Link to='logout'className='targetLogInLogout'>Logout</Link>
 
               </NavDropdown.Item>
             

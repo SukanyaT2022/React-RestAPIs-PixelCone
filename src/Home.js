@@ -76,12 +76,14 @@ const Home = () => {
               />
             ))}
         </div>
+        <div className='controlBothButton'>
         <button onClick={previousPageHandler} className="nextButton">
-          Previous Page
+          Prev
         </button>
         <button onClick={nextPageHandler} className="nextButton">
-          Next Page
+          Next
         </button>
+        </div>
       </div>
     </>
   );

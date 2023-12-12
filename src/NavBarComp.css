@@ -32,21 +32,8 @@ html,body{
 .targetB{
 margin-left: -25px;
 }
-/* ipad air */
-@media screen and (max-width:992px){
-    .targetTandLogIn{
-        background-color: aquamarine;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 30%;
-    }  
-    .controlLogoBox{
-        width: 40%;
-    }
-    .collapsible-nav-dropdown{
-        
-    }
+.targetLogInLogout{
+font-weight: bold;
 }
 a{
     text-decoration: none;
@@ -56,4 +43,23 @@ a{
 a:hover{
     color:black;
     
+}
+/* ipad air */
+@media screen and (max-width:992px){
+    .controlLogoBox{
+        width: 40%;
+    }
+ .targetLogo{
+margin-left: -20px;
+ }
+}
+/* phone */
+@media screen and (max-width:600px){
+.targetWholeNavBar{
+    margin-bottom: 100px!important;
+    background-color: red!important;
+}
+.targetLogo{
+    display: none;
+}
 }
