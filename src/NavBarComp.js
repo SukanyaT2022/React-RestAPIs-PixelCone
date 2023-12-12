@@ -4,19 +4,23 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import logo from './purpleLogoBG.png'
 import './NavBarComp.css'
-import { Link } from 'react-router-dom';
+import { Link,BrowserRouter } from 'react-router-dom';
 import MyRoutes from './MyRoutes';
 
 
 function NavBarComp() {
   return (
     <div>
+      <BrowserRouter>
     <MyRoutes/>
     <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary ">
       <Container className='targetWholeNavBar'>
         <Navbar.Brand href="/">
             <img src={logo} className='targetLogo'/>
           <b className='targetB'>Photo Search</b></Navbar.Brand>
+          <NavDropdown.Item>
+                <Link to='search' className='targetLogInLogout'>Search</Link>
+              </NavDropdown.Item>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
@@ -41,6 +45,7 @@ function NavBarComp() {
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    </BrowserRouter>
     </div>
   );
 }

@@ -4,7 +4,6 @@ import Search from './Search';
 import NavBarComp from './NavBarComp';
 
 const Home = () => {
-
   const apiKey = 'c19t5LBUeXItCyO5nb5bpds50rtTKwmX7xOeFa4PnEBN8jabAxpjQW6U';
   const searchQuery = 'child';
   const countPicPerPage = 21;
@@ -34,7 +33,6 @@ const Home = () => {
 
   const dataCatcher = (val) => {
     setData(val.photos);
-
   };
   const modalHandler = (image) => {
     setModal(true);
@@ -53,7 +51,6 @@ const Home = () => {
     <>
       <NavBarComp />
       <div className="wrapper">
-        <Search onData={dataCatcher} />
 
         {modal && (
           <div id="modal" className={modal ? 'myModal' : ''}>
