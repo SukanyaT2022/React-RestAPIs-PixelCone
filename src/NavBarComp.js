@@ -6,12 +6,11 @@ import logo from './purpleLogoBG.png'
 import './NavBarComp.css'
 import { Link,BrowserRouter } from 'react-router-dom';
 import MyRoutes from './MyRoutes';
-
+import Search from './Search'
 
 function NavBarComp() {
   return (
     <div>
-      <BrowserRouter>
     <MyRoutes/>
     <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary ">
       <Container className='targetWholeNavBar'>
@@ -19,8 +18,7 @@ function NavBarComp() {
             <img src={logo} className='targetLogo'/>
           <b className='targetB'>Photo Search</b></Navbar.Brand>
           <NavDropdown.Item>
-                <Link to='search' className='targetLogInLogout'>Search</Link>
-              </NavDropdown.Item>
+          </NavDropdown.Item>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
@@ -33,9 +31,7 @@ function NavBarComp() {
               </NavDropdown.Item>
               <NavDropdown.Item>
               <Link to='logout'className='targetLogInLogout'>Logout</Link>
-
               </NavDropdown.Item>
-            
              
             </NavDropdown>
             <Nav.Link eventKey={2} href="#memes">
@@ -45,7 +41,7 @@ function NavBarComp() {
         </Navbar.Collapse>
       </Container>
     </Navbar>
-    </BrowserRouter>
+
     </div>
   );
 }
