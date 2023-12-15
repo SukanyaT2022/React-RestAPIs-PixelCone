@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import './App.css';
+
 
 const Search = (props) => {
 const [search,setSearch] = useState()
@@ -28,7 +30,8 @@ const searchHandler =()=>{
 }
 
 return (
-  <div>
+  // css of search box is in app.css
+  <div className='search_wrapper'>
     <input type ="text" placeholder= "search category " onChange={(e)=>setSearch(e.target.value)} />
     <button onClick={searchHandler}>Search</button>
   </div>
