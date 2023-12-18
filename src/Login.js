@@ -2,6 +2,7 @@ import React from 'react'
 import NavBarComp from './NavBarComp.js';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
   return (
@@ -28,6 +29,7 @@ const Login = () => {
       <Button className='loginButton' type="submit">
        Login
       </Button>
+      Dont have account? <Link to='/register' className="register">Singup</Link>
     </Form>
     </div>
     </>

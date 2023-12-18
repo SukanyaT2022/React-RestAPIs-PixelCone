@@ -8,7 +8,7 @@ const Home = () => {
 
   const countPicPerPage = 21;
   const [nextPage, setNextPage] = useState(1);
-  const [search,setSearch] = useState("man")
+  const [search,setSearch] = useState("beach")
   const apiUrl = `https://api.pexels.com/v1/search?page=${nextPage}&query=${search}&per_page=${countPicPerPage}?`;
   const [data, setData] = useState();
   const [modal, setModal] = useState(false);

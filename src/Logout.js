@@ -10,10 +10,6 @@ const Logout = () => {
 <img src={logo}/>
 <h4>You sign out of your account</h4>
 </div>
-
-
-
-
       </div>
 
     </div>

@@ -27,10 +27,10 @@ function NavBarComp() {
             <div className='targetT'>T</div>
           <NavDropdown title="" id="collapsible-nav-dropdown">
               <NavDropdown.Item>
-                <Link to='login' className='targetLogInLogout'>Login</Link>
+                <Link to='/login' className='targetLogInLogout'>Login</Link>
               </NavDropdown.Item>
               <NavDropdown.Item>
-              <Link to='logout'className='targetLogInLogout'>Logout</Link>
+              <Link to='/logout'className='targetLogInLogout'>Logout</Link>
               </NavDropdown.Item>
              
             </NavDropdown>

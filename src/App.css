@@ -173,7 +173,7 @@ padding-top: 30px;
 }
 
 /* ipad */
-@media screen and (max-width: 992px){
+/* @media screen and (max-width: 992px){
   .nextButton{
     width: 25%;
     font-size: 20px;
@@ -182,26 +182,32 @@ padding-top: 30px;
     margin-top: 40px;
   }
   .search_wrapper input{
-width: 40%;
-  }
-  /* login page */
-.targetForm{
-  width: 70%;
-  margin: auto;
+    width: 40%;
+  } */
+    /* login page */
+  /* .targetForm{
+    width: 70%;
+    margin: auto;
 
-}
-.parentLogin{
-  min-height: 50vh;
-}
-/* logout page*/
-.whiteBox{
-width: 50%;
-}
-
-}
+  } */
+  /* .parentLogin{ */
+    /* min-height: 50vh; */
+  /* } */
+  /* logout page*/
+  /* .whiteBox{
+    width: 50%;
+  } */
+/* } */
 /* phone */
-@media screen and (max-width:600px){
-  .nextButton{
+@media only screen and (max-width: 400px){
+  .targetForm input{
+      width: 80%;
+  }
+  .form-label{
+    font-size: 7rem;
+}
+}
+  /* .nextButton{
     width: 25%;
     font-size: 20px;
   }
@@ -209,22 +215,26 @@ width: 50%;
     width: 45%!important;
     margin: 1%;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-    border-radius: 4px;
-  }
+    /* borer-radius: 4px; */
+  
 
   /* login page */
-.targetForm{
+/* .targetForm{
   width: 100%;
   margin: auto;
   background-color: #da6dff;
 
 }
 .parentLogin{
-height: 20vh;
+height: 10vh;
 margin-top:30px ;
-}
+} */
 /* .whiteBox{
-  width: 100%;
-  } */
-}
+width: 100%;
+  }
+} */
 
+/* .register{ */
+  /* color:#9C00C9;
+} */ 
+/* } */
