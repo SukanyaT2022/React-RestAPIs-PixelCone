@@ -13,10 +13,7 @@ const Login = () => {
       <Form className='targetForm'>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Email address</Form.Label>
-        <Form.Control type="email" placeholder="Enter email" />
-        <Form.Text className="text-muted">
-          We'll never share your email with anyone else.
-        </Form.Text>
+        <Form.Control type="email" placeholder="Enter email"/>
       </Form.Group>
 
       <Form.Group className="mb-3" controlId="formBasicPassword">
@@ -29,7 +26,7 @@ const Login = () => {
       <Button className='loginButton' type="submit">
        Login
       </Button>
-      Dont have account? <Link to='/register' className="register">Singup</Link>
+     <h4 className='text-center'>Dont have account?<Link to='/register' className="register ms-2">Signup</Link></h4>
     </Form>
     </div>
     </>

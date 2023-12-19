@@ -1,10 +1,22 @@
 import React from 'react'
+import NavBarComp from './NavBarComp.js';
 
 const Register = () => {
   return (
-    <div>
-      <h1>Signup Page</h1>
-    </div>
+    <div >
+         <NavBarComp/>
+   <div className='mainBox'>
+
+   </div>
+<div className='bg-side'>
+
+</div>
+<div className='signUpForm'>
+
+   </div>
+   
+   </div>
+  
   )
 }
 

@@ -135,7 +135,7 @@ background-color: #da6dff;
 .targetForm{
   width: 30%;
   margin: auto;
-/* background-color: white; */
+
 }
 .loginButton{
   background-color: #9C00C9;
@@ -173,7 +173,7 @@ padding-top: 30px;
 }
 
 /* ipad */
-/* @media screen and (max-width: 992px){
+@media screen and (max-width: 992px){
   .nextButton{
     width: 25%;
     font-size: 20px;
@@ -183,21 +183,28 @@ padding-top: 30px;
   }
   .search_wrapper input{
     width: 40%;
-  } */
+  } 
     /* login page */
-  /* .targetForm{
+  .targetForm{
     width: 70%;
     margin: auto;
+    font-size: 25px;
+    color: black;
 
-  } */
-  /* .parentLogin{ */
-    /* min-height: 50vh; */
-  /* } */
+  } 
+ .parentLogin{ 
+    min-height: 50vh; 
+} 
   /* logout page*/
-  /* .whiteBox{
-    width: 50%;
-  } */
-/* } */
+  .whiteBox{
+    width: 70%;
+    height: 350px;
+  } 
+  .whiteBox h4{
+    font-size: 40px!important;
+    margin-top: 40px;
+  }
+}
 /* phone */
 @media only screen and (max-width: 400px){
   .targetForm input{
@@ -206,8 +213,8 @@ padding-top: 30px;
   .form-label{
     font-size: 7rem;
 }
-}
-  /* .nextButton{
+
+  .nextButton{
     width: 25%;
     font-size: 20px;
   }
@@ -215,11 +222,11 @@ padding-top: 30px;
     width: 45%!important;
     margin: 1%;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-    /* borer-radius: 4px; */
+  }
   
 
   /* login page */
-/* .targetForm{
+.targetForm{
   width: 100%;
   margin: auto;
   background-color: #da6dff;
@@ -228,13 +235,13 @@ padding-top: 30px;
 .parentLogin{
 height: 10vh;
 margin-top:30px ;
-} */
-/* .whiteBox{
-width: 100%;
+} 
+.whiteBox{
+width:800px!important;
   }
-} */
 
-/* .register{ */
-  /* color:#9C00C9;
-} */ 
-/* } */
+
+.register{ 
+   color:#9C00C9;
+} 
+}
