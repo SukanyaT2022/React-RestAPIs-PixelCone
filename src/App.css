@@ -16,14 +16,14 @@ img {
 .data_wrapper {
   text-align: center;
 }
-.modal{
-  width:100%;
+.modal {
+  width: 100%;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.132);
-  top:0;
-  bottom:0;
-  right:0;
-  left:0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
 .data_wrapper {
   display: flex;
@@ -80,65 +80,61 @@ img:hover {
 .modal_img {
   width: 70%;
 }
-.targetLogo{
+.targetLogo {
   box-shadow: none;
 }
 /* next button */
-.nextButton{
-  background-color: #9C00C9;
+.nextButton {
+  background-color: #9c00c9;
   border: none;
   width: 15%;
   padding: 15px 30px;
   margin: 50px 20px;
   color: white;
   font-weight: bold;
-border-radius: 10px;
+  border-radius: 10px;
 }
-.nextButton:hover{
+.nextButton:hover {
   background-color: #da6dff;
 }
-.controlBothButton{
+.controlBothButton {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 /* on search.js page searchbox */
-.search_wrapper{
-
+.search_wrapper {
   display: flex;
- justify-content: center;
- margin-bottom:40px ;
-
-
+  justify-content: center;
+  margin-bottom: 40px;
 }
-.search_wrapper input{
+.search_wrapper input {
   width: 30%;
   padding: 10px 30px;
   border-radius: 10px;
-  border: 1px solid #9C00C9;
+  border: 1px solid #9c00c9;
 }
-.search_wrapper button{
-padding: 0px 20px;
-margin-left: 10px;
-border-radius: 10px;
-font-weight: bold;
-color: white;
-border: none;
-background-color: #9C00C9;
+.search_wrapper button {
+  padding: 0px 20px;
+  margin-left: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  background-color: #9c00c9;
 }
-.search_wrapper button:hover{
-background-color: #da6dff;
+.search_wrapper button:hover {
+  background-color: #da6dff;
 }
 
 /* login page */
-.targetForm{
+.targetForm {
   width: 30%;
   margin: auto;
-
 }
-.loginButton{
-  background-color: #9C00C9;
+.loginButton {
+  background-color: #9c00c9;
   width: 70%;
   border-radius: 20px;
   border: none;
@@ -148,100 +144,110 @@ background-color: #da6dff;
   font-weight: bold;
   font-size: 18px;
 }
-.parentLogin{
+.parentLogin {
   background-image: url('https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJhY2tncm91bmQlMjBjaXJjbGUlMjBwdXJwbGV8ZW58MHx8MHx8fDA%3D');
   min-height: 90vh;
   height: auto;
   background-repeat: no-repeat;
   background-size: cover;
-position: relative;
+  position: relative;
 }
 /* logout page */
 /* logout page use the same baxkground class login page */
-.whiteBox{
+.whiteBox {
   width: 30%;
   height: 300px;
   background-color: white;
-position: absolute;
-left: 50%;
-top: 50%;
-transform: translate(-50%,-50%);
-border-radius: 20px;
-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-text-align: center;
-padding-top: 30px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  text-align: center;
+  padding-top: 30px;
 }
 
 /* ipad */
-@media screen and (max-width: 992px){
-  .nextButton{
+@media screen and (max-width: 992px) {
+  .nextButton {
     width: 25%;
     font-size: 20px;
   }
   .wrapper {
     margin-top: 40px;
   }
-  .search_wrapper input{
+  .search_wrapper input {
     width: 40%;
-  } 
-    /* login page */
-  .targetForm{
+  }
+  /* login page */
+  .targetForm {
     width: 70%;
     margin: auto;
     font-size: 25px;
     color: black;
-
-  } 
- .parentLogin{ 
-    min-height: 50vh; 
-} 
+  }
+  .parentLogin {
+    min-height: 50vh;
+  }
   /* logout page*/
-  .whiteBox{
+  .whiteBox {
     width: 70%;
     height: 350px;
-  } 
-  .whiteBox h4{
-    font-size: 40px!important;
+  }
+  .whiteBox h4 {
+    font-size: 40px !important;
     margin-top: 40px;
   }
-}
-/* phone */
-@media only screen and (max-width: 400px){
-  .targetForm input{
-      width: 80%;
-  }
-  .form-label{
-    font-size: 7rem;
-}
-
-  .nextButton{
-    width: 25%;
-    font-size: 20px;
-  }
   img {
-    width: 45%!important;
+    width: 40% !important;
     margin: 1%;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
   }
-  
-
-  /* login page */
-.targetForm{
-  width: 100%;
-  margin: auto;
-  background-color: #da6dff;
-
 }
-.parentLogin{
-height: 10vh;
-margin-top:30px ;
-} 
-.whiteBox{
-width:800px!important;
+/* phone */
+@media only screen and (max-width: 600px) {
+  .targetForm {
+  font-size: 20px;
+  }
+  .parentLogin {
+    height: 100vh;
+    margin-top: 30px;
+  }
+  .parentLogin h2{
+ font-size: 28px;
+  }
+  .whiteBox {
+    width: 300px !important;
+    height: 200px;
   }
 
+  .register {
+    color: #9c00c9;
+    font-size: 20px;
+  }
+  .noAccountH2{
+    font-size: 20px;
+  }
+  /* input searchBox */
+  .search_wrapper input {
+    width: 80%;
+ 
+  }
+  /* next button */
+.nextButton {
+  width: 25%;
+  padding: 10px 30px;
+  font-size: 14px;
 
-.register{ 
-   color:#9C00C9;
-} 
 }
+/* search button */
+.search_wrapper button {
+  font-size: 14px;
+}
+
+}
+
+/* @media only screen and (min-width: 200px) and (max-width: 400px) {
+
+} */

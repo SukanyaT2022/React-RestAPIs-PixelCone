@@ -14,7 +14,7 @@ function NavBarComp() {
     <MyRoutes/>
     <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary ">
       <Container className='targetWholeNavBar'>
-        <Navbar.Brand href="/">
+        <Navbar.Brand href="/" className='targetLogoText'>
             <img src={logo} className='targetLogo'/>
           <b className='targetB'>Photo Search</b></Navbar.Brand>
           <NavDropdown.Item>
