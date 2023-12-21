@@ -1,6 +1,7 @@
 import React from 'react'
 import NavBarComp from './NavBarComp.js';
 import logo from './purpleLogoBG.png'
+
 const Logout = () => {
   return (
     <div>

@@ -26,7 +26,7 @@ const Login = () => {
       <Button className='loginButton' type="submit">
        Login
       </Button>
-     <h4 className='text-center noAccountH2'>Dont have account?<Link to='/register' className="register ms-2">Signup</Link></h4>
+     <h4 className='text-center noAccountH2'>Don't have an account yet?<Link to='/register' className="register ms-2">Sign Up</Link></h4>
     </Form>
     </div>
     </>
