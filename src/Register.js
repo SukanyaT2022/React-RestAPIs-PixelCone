@@ -11,7 +11,8 @@ const Register = () => {
 
 </div>
 <div className='signUpForm'>
-  <h2>Sign Up</h2>
+  <h3>Sign Up</h3>
+  <p>Create an account to access millions of pictures.</p>
 <form >
   <div className='makeInputBoxSidebySide'>
     <input type='text'placeholder='First Name' />
@@ -25,9 +26,9 @@ const Register = () => {
     <input type='text'placeholder='User Name' />
     <input type='password' placeholder='Password' />
   </div>
-  <div className='makeInputBoxSidebySide'>
+  <div className='agreeBox'>
     <input type='checkbox' />
-<span>I agree with term</span>
+<span>I've read and agree with the terms of service and our privacy policy.</span>
   </div>
   <input type="submit" value="Sign Up"/>
 </form>
