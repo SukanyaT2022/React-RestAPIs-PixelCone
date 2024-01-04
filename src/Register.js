@@ -30,7 +30,7 @@ const Register = () => {
     <input type='checkbox' />
 <span>I've read and agree with the terms of service and our privacy policy.</span>
   </div>
-  <input type="submit" value="Sign Up"/>
+  <input type="submit" value="Sign Up" className='signUpButton'/>
 </form>
    </div>
    

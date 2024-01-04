@@ -177,9 +177,10 @@ img:hover {
 /* sign up or register page */
 .mainBox {
   width: 80%;
-  margin: auto;
+  margin: 40px auto 20px auto;
   display: flex;
-  min-height: 50vh;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 30px;
 }
 /* control image side of sign up box */
 .bg-side {
@@ -191,7 +192,6 @@ img:hover {
 }
 .signUpForm {
   width: 70%;
-  background-color: green;
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
 }
@@ -211,11 +211,12 @@ img:hover {
   width: 40%;
   margin: 10px;
   padding: 5px 10px;
+  border-radius: 10px;
+  border: 1px solid #bdc3c7;
 }
 .agreeBox {
   width: 82%;
-  margin: auto;
-  background-color: #da6dff;
+  margin: 10px auto;
   display: flex;
   align-items: center;
 }
@@ -223,6 +224,20 @@ img:hover {
   width: 20px;
   height: 20px;
   margin-right: 10px;
+  border: 1px solid #bdc3c7;
+}
+.signUpButton {
+  padding: 12px 80px;
+  display: block;
+  margin: 20px auto 50px auto;
+  border-radius: 10px;
+  background-color: #9c00c9;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+.signUpButton:hover {
+  background-color: #da6dff;
 }
 
 /* ipad */
@@ -264,6 +279,32 @@ img:hover {
     width: 40% !important;
     margin: 1%;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  }
+  /* register page - sign up page  */
+  .makeInputBoxSidebySide {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .makeInputBoxSidebySide input {
+    width: 80%;
+  }
+  .signUpForm h3 {
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+  .signUpForm p {
+    margin-left: 50px;
+  }
+  .agreeBox span {
+    font-size: 14px;
+  }
+  .agreeBox input {
+    margin-right: 20px;
+  }
+  .agreeBox {
+    align-items: flex-start;
   }
 }
 
@@ -315,6 +356,33 @@ img:hover {
   }
   .whiteBox h4 {
     font-size: 20px !important;
+  }
+  /* register page - sign up page  */
+  .mainBox {
+    width: 100%;
+    margin: 40px auto 40px auto;
+    flex-direction: column;
+  }
+  /* control image side of sign up box */
+  .bg-side {
+    width: 100%;
+    height: 250px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 30px;
+  }
+  .signUpForm {
+    width: 100%;
+  }
+  .signUpForm h3 {
+    margin-top: 50px;
+    margin-left: 40px;
+  }
+  .signUpForm p {
+    margin-left: 40px;
+  }
+  .agreeBox input {
+    margin-right: 10px;
+    margin-left: 5px;
   }
 }
 
