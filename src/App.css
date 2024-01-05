@@ -250,7 +250,7 @@ img:hover {
     margin-top: 40px;
   }
   .search_wrapper input {
-    width: 40%;
+    width: 50%;
   }
   /* login page */
   .targetForm {
@@ -306,6 +306,13 @@ img:hover {
   .agreeBox {
     align-items: flex-start;
   }
+  /* pop up image on home.js*/
+
+  .myModal .image img {
+    width: 80% !important;
+    height: 400px !important; /* Adjust the max-height as needed */
+    object-fit: cover;
+  }
 }
 
 /* sign up or register page */
@@ -336,7 +343,8 @@ img:hover {
   }
   /* input searchBox */
   .search_wrapper input {
-    width: 80%;
+    width: 60%;
+    text-align: center;
   }
   /* next button */
   .nextButton {
@@ -383,6 +391,12 @@ img:hover {
   .agreeBox input {
     margin-right: 10px;
     margin-left: 5px;
+  }
+  /* pop up image on home page */
+  .myModal .image img {
+    width: 68% !important;
+    height: 200px !important; /* Adjust the max-height as needed */
+  object-fit: cover;
   }
 }
 

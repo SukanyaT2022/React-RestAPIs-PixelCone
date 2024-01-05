@@ -17,8 +17,7 @@ function NavBarComp() {
         <Navbar.Brand href="/" className='targetLogoText'>
             <img src={logo} className='targetLogo'/>
           <b className='targetB'>Photo Search</b></Navbar.Brand>
-          <NavDropdown.Item>
-          </NavDropdown.Item>
+       
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
@@ -26,12 +25,14 @@ function NavBarComp() {
           <Nav>
             <div className='targetT'>T</div>
           <NavDropdown title="" id="collapsible-nav-dropdown">
+         
               <NavDropdown.Item>
                 <Link to='/login' className='targetLogInLogout'>Login</Link>
               </NavDropdown.Item>
               <NavDropdown.Item>
               <Link to='/logout'className='targetLogInLogout'>Logout</Link>
               </NavDropdown.Item>
+          
              
             </NavDropdown>
             <Nav.Link eventKey={2} href="#memes">
