@@ -7,11 +7,15 @@ import './NavBarComp.css'
 import { Link,BrowserRouter } from 'react-router-dom';
 import MyRoutes from './MyRoutes';
 import Search from './Search'
+import Toggle from './Toggle'
 
 function NavBarComp() {
   return (
-    <div>
+    <div className='wrapAll'>
     <MyRoutes/>
+       {/* dark and white mode */}
+       {/* <div className='targetSwitchToggle'><Toggle/></div> */}
+   
     <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary ">
       <Container className='targetWholeNavBar'>
         <Navbar.Brand href="/" className='targetLogoText'>
@@ -40,8 +44,11 @@ function NavBarComp() {
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
+    
       </Container>
+      <div className='targetSwitchToggle'><Toggle/></div>
     </Navbar>
+
 
     </div>
   );

@@ -8,7 +8,7 @@ const Home = () => {
   const countPicPerPage = 21;
   const [nextPage, setNextPage] = useState(1);
   const [search,setSearch] = useState("beach")
-  const apiUrl = `https://api.pexels.com/v1/search?page=${nextPage}&query=${search}&per_page=${countPicPerPage}?`;
+  const apiUrl = `https://api.pexels.com/v1/search?page=${nextPage}&query=${search}&per_page=${countPicPerPage}&orientation=landscape`;
   const [data, setData] = useState();
   const [modal, setModal] = useState(false);
   const [storeImage, setStoreImage] = useState('');
@@ -69,7 +69,7 @@ const Home = () => {
             data.map((val, index) => (
               <img
                 key={index}
-                src={val.src.tiny}
+                src={val.src.medium}
                 className="image"
                 onClick={() => modalHandler(val.src.landscape)}
               />
