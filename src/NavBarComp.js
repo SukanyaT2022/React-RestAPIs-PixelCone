@@ -8,9 +8,15 @@ import { Link,BrowserRouter } from 'react-router-dom';
 import MyRoutes from './MyRoutes';
 import Search from './Search'
 import Toggle from './Toggle'
+import {useState} from 'react'
 
 function NavBarComp() {
-  return (
+  const [titleColor,setTitleColor] = useState('black');
+
+  const titleHandler = (val)=>{
+     val?setTitleColor('black'):setTitleColor('white'); 
+  }
+    return (
     <div className='wrapAll'>
     <MyRoutes/>
        {/* dark and white mode */}
@@ -20,7 +26,7 @@ function NavBarComp() {
       <Container className='targetWholeNavBar'>
         <Navbar.Brand href="/" className='targetLogoText'>
             <img src={logo} className='targetLogo'/>
-          <b className='targetB'>Photo Search</b></Navbar.Brand>
+          <b className='targetB' style={{color:titleColor}}>Photo Search</b></Navbar.Brand>
        
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
@@ -46,7 +52,7 @@ function NavBarComp() {
         </Navbar.Collapse>
     
       </Container>
-      <div className='targetSwitchToggle'><Toggle/></div>
+      <div className='targetSwitchToggle'><Toggle titleHandler = {titleHandler}/></div>
     </Navbar>
 
 

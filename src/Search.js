@@ -6,7 +6,7 @@ const Search = (props) => {
 const [search,setSearch] = useState()
 var apiKey = "c19t5LBUeXItCyO5nb5bpds50rtTKwmX7xOeFa4PnEBN8jabAxpjQW6U";
 const category = 'bird'; // Replace with the desired category
-const apiUrl = `https://api.pexels.com/v1/search?query=${search}&page=${props.nextPage}`;
+const apiUrl = `https://api.pexels.com/v1/search?query=${search}&page=${props.nextPage}&orientation=landscape`;
 // const handleSearch =(e)=>{
 // setSearch(e.target.value)
 // }
