@@ -26,6 +26,7 @@ html,body{
    color: white;
    font-weight: bold;
    border: none;
+   margin-right: 45px;
 }
 .uploadButton:hover{
     background-color: grey;
@@ -49,7 +50,7 @@ a:hover{
 .targetSwitchToggle{
     position: absolute;  
     top: 60px;
-    right: 40px;
+    right: 24%;
 
  
   }
@@ -109,9 +110,8 @@ padding: 0;
   font-size: 14px;
  }
  .targetSwitchToggle{
-    position: absolute;  
-    top: 20px;
-    left: 15px;
+
+    display: none;
   }
   .wrapAll{
       position: relative;
